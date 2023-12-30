@@ -1,0 +1,57 @@
+.text-box {
+  text-align: center;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+.text-box .text {
+  font-size: 30px;
+  color: #101010;
+  font-weight: 500;
+}
+.cursor {
+  animation: blink 0.5s infinite;
+  font-size: 35px;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+.introduce {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  color: #444444;
+  font-weight: 400;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+.about-box {
+  height: calc(100vh - 200px);
+  position: relative;
+}
+.profile-box{
+    
+    width: calc(100% - 400px);
+    padding: 8px 20px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,.25);
+}
+
+.profile-box .img-inform{
+    margin-top: 30px;
+}
+.profile-box img{
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
