@@ -7,11 +7,13 @@ import SkillContent from './pages/SkillContent';
 import StarContent from './pages/StarContent';
 function App() {
   const color =[
-    '#F2B705',
-    '#F25C05',
-    '#0388A6',
-    '#0E5929',
-    '#F272A1',
+    '#f2b3b3',
+    '#f2eeb3',
+    '#b3f2e5',
+    '#b3b7f2',
+    '#F2B3DC',
+    '#f2b3cb',
+    '#eaf2b3',
   ]
 const starItem = () =>{
   let arr=[];

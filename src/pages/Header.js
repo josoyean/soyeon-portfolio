@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import './Header.css';
 function Header() {
-    const [scrollMove,setScrollMove] = useState(false);
+
     const [lineWidth,setLineWidth] = useState(0);
 
     window.addEventListener('scroll',function (event) {
@@ -10,16 +10,26 @@ function Header() {
     var percent = (scroll / (this.document.body.offsetHeight - this.window.innerHeight)) * 100;
     setLineWidth(percent);
     })
+
+    const scrollMove = (scroll,e)=>{
+      setTimeout(function() {
+        var PageLocation = document.querySelector(scroll).offsetTop; 
+        var content = window.scrollY;
+    
+        window.scrollTo({top: PageLocation - 6, behavior: 'smooth'}); 
+    }, 70);
+   
+    } 
   return (
     <header>
         <div className='center'>
         <img src={process.env.PUBLIC_URL +`/images/josoyeon.png`}  alt='logo' className='logo'></img>
         <ul>
-            <ListItem>{'<About />'}</ListItem>
-            <ListItem>{'<Skills />'}</ListItem>
+            <ListItem onClick={(e) => {scrollMove(".about-box",e)}}>{'<About />'}</ListItem>
+            <ListItem onClick={(e) => {scrollMove(".skills-content",e)}}>{'<Skills />'}</ListItem>
             <ListItem>{'<Experience />'}</ListItem>
-            <ListItem>{'<Projects />'}</ListItem>
-            <ListItem>{'<Contect />'}</ListItem>
+            <ListItem onClick={(e) => {scrollMove(".projects-box",e)}}>{'<Projects />'}</ListItem>
+            <ListItem >{'<Contect />'}</ListItem>
         </ul>
      
         </div>
