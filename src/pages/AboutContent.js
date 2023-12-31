@@ -3,19 +3,19 @@ import styled from 'styled-components';
 import './Content.css';
 function AboutContent() {
     useEffect (()=>{
-        const content = "안녕하세요.  \n 주니어 Front-end Development \n 조소연입니다. :)";
+        const content = "안녕하세요.  & 주니어 Front-end Development & 조소연 포트폴리오 페이지 입니다. :)";
         const text = document.querySelector(".text");
         let i = 0;
         
         function typing(){
             let txt = content[i++];
-            text.innerHTML += txt=== "\n" ? "<br/>": txt;
+            text.innerHTML += txt=== "&" ? "<br/>": txt;
             if (i > content.length) {
                 text.textContent = "";
                 i = 0;
             }
         }
-        setInterval(typing, 200)
+        setInterval(typing, 150)
       },[]);
   return (
 <div className='center'>
@@ -31,7 +31,13 @@ function AboutContent() {
     <div className='img-inform'>
     <img src={process.env.PUBLIC_URL +`/images/profile.jpg`}  alt='profile' className='profile'></img>
     <ul>
-        <li></li>
+        <li>  <img src={process.env.PUBLIC_URL +`/images/person.png`}  alt='person' className='item-icon'></img> <ProfileText>조소연</ProfileText></li>
+        <li>  <img src={process.env.PUBLIC_URL +`/images/birth.png`}  alt='birth' className='item-icon'></img> <ProfileText>1996.10.16</ProfileText></li>
+        <li>  <img src={process.env.PUBLIC_URL +`/images/house.png`}  alt='house' className='item-icon'></img> <ProfileText>서울특별시 광진구</ProfileText></li>
+        <li>  <img src={process.env.PUBLIC_URL +`/images/email.png`}  alt='email' className='item-icon'></img> <ProfileText>dlfjswhtnals@naver.com</ProfileText></li>
+        <li>  <img src={process.env.PUBLIC_URL +`/images/graduation.png`}  alt='graduation' className='item-icon'></img> <ProfileText>한국공학대학교 게임공학과</ProfileText></li>
+        <li>  <img src={process.env.PUBLIC_URL +`/images/github.png`}  alt='github' className='item-icon'></img> <a href="https://github.com/josoyean" target='_blank'><ProfileText>GITHUB</ProfileText></a></li>
+        <li>  <img src={process.env.PUBLIC_URL +`/images/blogspot.png`}  alt='blogspot' className='item-icon'></img> <a href="https://saltsoyeon.tistory.com/" target='_blank'><ProfileText>TISTORY</ProfileText></a></li>
     </ul>
     </div>
 </div>

@@ -10,3 +10,18 @@ padding: 0;
 ul,li{
   list-style: none;
 }
+em{
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+}
+button{
+  background-color: rgb(254, 195, 250);
+  color:#101010;
+  border: none;
+  font-size: 14px;
+  padding: 2px 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}

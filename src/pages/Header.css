@@ -1,6 +1,22 @@
 header{
     width: 100vw;
     height: 80px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
+}
+header.action{
+ border-bottom: 2px solid #101010;
+ box-sizing: border-box;
+
+   
+}
+header.action::after{
+   
+
 }
 .logo{
 width: 80px;

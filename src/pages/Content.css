@@ -1,9 +1,10 @@
 .text-box {
   text-align: center;
   position: absolute;
-  top: 40px;
+  top: 70px;
   left: 0;
   right: 0;
+  height: 250px;
 }
 .text-box .text {
   font-size: 30px;
@@ -33,25 +34,188 @@
   right: 0;
 }
 .about-box {
+  margin-top: 80px;
+  box-sizing: border-box;
   height: calc(100vh - 200px);
   position: relative;
 }
-.profile-box{
-    
-    width: calc(100% - 400px);
-    padding: 8px 20px;
-    margin: 40px auto;
-    box-sizing: border-box;
-    border-radius: 5px;
-    background-color: #ffffff;
-    box-shadow: 1px 1px 8px 1px rgba(0,0,0,.25);
+.profile-box {
+  width: calc(100% - 400px);
+  padding: 8px 20px;
+  margin: 50px auto 70px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
+}
+.project-box .btn-box{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    position: absolute;
+    transition: all 700ms;
+    bottom: -100%;
+    left: 10px;
+}
+.project-box:hover .btn-box{
+   
+    transition: all 700ms;
+    bottom: 10px;
+}
+.profile-box .img-inform {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.profile-box .img-inform > img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+.profile-box .img-inform span {
+  font-size: 20px;
+}
+.profile-box .item-icon {
+  width: 40px;
+  height: 40px;
+}
+.profile-box .img-inform ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.profile-box .img-inform li {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.skills-content {
+  padding: 20px;
+}
+.skill-box {
+  display: grid;
+  gap: 40px 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.skill-box li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.skill-box span {
+  font-size: 20px;
+}
+.skill-box .item-box img {
+  width: 150px;
+  height: 150px;
+}
+.skill-box .item-box > * {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  backface-visibility: hidden; /* 추가 */
+}
+.skill-box .item-card {
+  perspective: 1100px;
+  width: auto;
+  height: auto;
+}
+.skill-box .item-box {
+  position: relative;
+  transform-style: preserve-3d;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  transition: transform 0.3s; /* 추가 */
+  transform: perspective(800px) rotateY(0deg); /* 추가 */
+}
+.skill-box .item-card:hover {
+  transform: perspective(800px) rotateY(180deg); /* 추가 */
+}
+.skill-box .item-card:hover .item-back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill-box .item-card:hover .item-box {
+  transform: rotateY(180deg);
+}
+.skill-box .item-back {
+  display: none;
 }
 
-.profile-box .img-inform{
-    margin-top: 30px;
+.skill-box .item-back span {
+  transform: rotateY(180deg);
+  font-size: 30px;
+  color: #444444;
 }
-.profile-box img{
-    width: 300px;
-    height: auto;
-    border-radius: 50%;
+.profile-box.projects-box,
+.profile-box.experience-box{
+    display: grid;
+    box-shadow: none;
+    padding: 0;
+    row-gap: 30px;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 270px);
+}
+.project-box{
+    width: 270px;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
+    height: 270px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.project-box img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.project-box > *{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.project-box .item{
+    width: 100%;
+    /* height: 100%; */
+    padding: 10px;
+    height: 0%;
+    opacity: 0;
+    box-sizing: border-box;
+    top: unset;
+    transition: all 700ms;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.project-box:hover .item{
+    padding: 10px;
+        height: 100%;
+    opacity: 1;
+    transition: all 700ms;
+}
+.project-box .title-btn{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.project-box .inform-box{
+    display: flex;
+    margin-top: 10px;
+    row-gap: 5px;
+    flex-direction: column;
+}
+.project-box .inform-box .position-text{
+    white-space: nowrap;
+}
+.project-box .inform-box span{
+    color: #e8e8e8;
+    font-size: 14px;
 }
