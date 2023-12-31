@@ -3,16 +3,15 @@ import styled from 'styled-components';
 import './Header.css';
 function Header() {
     const [scrollMove,setScrollMove] = useState(false);
+    const [lineWidth,setLineWidth] = useState(0);
+
     window.addEventListener('scroll',function (event) {
     let scroll = this.window.scrollY;
-     if(scroll >80){
-       setScrollMove(true);
-     }else{
-       setScrollMove(false);
-     }
+    var percent = (scroll / (this.document.body.offsetHeight - this.window.innerHeight)) * 100;
+    setLineWidth(percent);
     })
   return (
-    <header className= {scrollMove ? "action":""}>
+    <header>
         <div className='center'>
         <img src={process.env.PUBLIC_URL +`/images/josoyeon.png`}  alt='logo' className='logo'></img>
         <ul>
@@ -24,6 +23,7 @@ function Header() {
         </ul>
      
         </div>
+        <div className='line' style={{"width": lineWidth+"%"}}></div>
     </header>
   )
 }

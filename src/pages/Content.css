@@ -36,7 +36,7 @@
 .about-box {
   margin-top: 80px;
   box-sizing: border-box;
-  height: calc(100vh - 200px);
+  height: 520px;
   position: relative;
 }
 .profile-box {
@@ -88,6 +88,25 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
+}
+.profile-box .img-inform li.pointer{
+ animation: pointerAni 4000ms infinite  linear;
+}
+.profile-box .img-inform li.pointer:hover{
+    animation: none;
+}
+@keyframes pointerAni {
+    0%{
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: 0;
+    }
 }
 .skills-content {
   padding: 20px;
@@ -150,12 +169,13 @@
 .skill-box .item-back span {
   transform: rotateY(180deg);
   font-size: 30px;
-  color: #444444;
+  color: #F280CA;
 }
 .profile-box.projects-box,
 .profile-box.experience-box{
     display: grid;
     box-shadow: none;
+    background-color: transparent;
     padding: 0;
     row-gap: 30px;
     justify-content: space-between;
@@ -163,6 +183,7 @@
 }
 .project-box{
     width: 270px;
+    background-color: #fff;
     box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
     height: 270px;
     border-radius: 10px;
@@ -185,6 +206,7 @@
 }
 .project-box .item{
     width: 100%;
+    border-radius: 10px;
     /* height: 100%; */
     padding: 10px;
     height: 0%;
@@ -219,3 +241,39 @@
     color: #e8e8e8;
     font-size: 14px;
 }
+.star-item{
+    top: 0%;
+    left: 0px;
+}
+.star-item {
+
+    /* margin: 50px 0; */
+    position: relative;
+    position: absolute;
+    display: block;
+    
+    /* color: pink; */
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    /* border-right: 100px solid transparent;
+    border-bottom: 70px solid pink;
+    border-left: 100px solid transparent; */
+    transform: rotate(35deg);
+    
+    animation: starTop 8000ms infinite forwards linear;
+  }
+
+  @keyframes starTop {
+    to{
+        top: calc(100% + 50px);
+    }
+    
+    from{
+        top: 0%;
+    }
+  }
+
+
+
+

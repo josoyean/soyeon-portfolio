@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-function ContentItem({LinkName,Title,Position,ItemDate,pageLink,MyWork,SkillText,CodeBtn,codeLink}) {
+function ContentItem({keyNum,LinkName,Title,Position,ItemDate,pageLink,MyWork,SkillText,CodeBtn,codeLink}) {
     const DemoLink  = (link,e) =>{
         e.preventDefault();
         window.open(link, '_blank');
@@ -11,7 +11,7 @@ function ContentItem({LinkName,Title,Position,ItemDate,pageLink,MyWork,SkillText
     }
 
   return (
-    <div className='project-box'>
+    <div className='project-box' key={keyNum}>
          <img src={process.env.PUBLIC_URL + `/images/`+LinkName+`.png`} alt="html" ></img>
          <div className='item'>
             <div className='title-btn'>
@@ -22,12 +22,12 @@ function ContentItem({LinkName,Title,Position,ItemDate,pageLink,MyWork,SkillText
             <span className='position-text'>POSITION : {Position}</span>
             <span className='mywork-text'>MYWORK : {
                 MyWork.map((item,index)=>{
-                  return  <em>{item}{MyWork.length <=index+1 ? " ":", " }</em>
+                  return  <em key={index}>{item}{MyWork.length <=index+1 ? " ":", " }</em>
                 })
             }</span>
              <span className='skill-text'>SKILL : {
                 SkillText.map((item,index)=>{
-                  return  <em>{"#"+item +" "}</em>
+                  return  <em key={index}>{"#"+item +" "}</em>
                 })
             }</span>
             </div>
@@ -43,7 +43,7 @@ function ContentItem({LinkName,Title,Position,ItemDate,pageLink,MyWork,SkillText
 export default ContentItem
 
 const ItemTitle = styled.span`
-  color: rgb(254, 195, 250);
+  color:#F2B3DC;
   font-size: 20px;
   display: block;
   font-weight: 500;

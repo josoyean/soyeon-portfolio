@@ -36,8 +36,8 @@ function AboutContent() {
         <li>  <img src={process.env.PUBLIC_URL +`/images/house.png`}  alt='house' className='item-icon'></img> <ProfileText>서울특별시 광진구</ProfileText></li>
         <li>  <img src={process.env.PUBLIC_URL +`/images/email.png`}  alt='email' className='item-icon'></img> <ProfileText>dlfjswhtnals@naver.com</ProfileText></li>
         <li>  <img src={process.env.PUBLIC_URL +`/images/graduation.png`}  alt='graduation' className='item-icon'></img> <ProfileText>한국공학대학교 게임공학과</ProfileText></li>
-        <li>  <img src={process.env.PUBLIC_URL +`/images/github.png`}  alt='github' className='item-icon'></img> <a href="https://github.com/josoyean" target='_blank'><ProfileText>GITHUB</ProfileText></a></li>
-        <li>  <img src={process.env.PUBLIC_URL +`/images/blogspot.png`}  alt='blogspot' className='item-icon'></img> <a href="https://saltsoyeon.tistory.com/" target='_blank'><ProfileText>TISTORY</ProfileText></a></li>
+        <li className='pointer'>  <img src={process.env.PUBLIC_URL +`/images/github.png`}  alt='github' className='item-icon'></img> <a href="https://github.com/josoyean" target='_blank'><ProfileText>GITHUB</ProfileText></a></li>
+        <li className='pointer'>  <img src={process.env.PUBLIC_URL +`/images/blogspot.png`}  alt='blogspot' className='item-icon'></img> <a href="https://saltsoyeon.tistory.com/" target='_blank'><ProfileText>TISTORY</ProfileText></a></li>
     </ul>
     </div>
 </div>
