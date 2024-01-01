@@ -1,5 +1,6 @@
 import './App.css';
 import AboutContent from './pages/AboutContent';
+import ContactContent from './pages/ContactContent';
 import ExperienceContent from './pages/ExperienceContent';
 import Header from './pages/Header';
 import ProjectContent from './pages/ProjectContent';
@@ -37,6 +38,7 @@ const starItem = () =>{
       <SkillContent></SkillContent>
       <ExperienceContent></ExperienceContent>
       <ProjectContent></ProjectContent>
+      <ContactContent></ContactContent>
       <div className='star-box'>
       {
         starItem()

@@ -276,7 +276,53 @@
         top: 0%;
     }
   }
-
-
-
-
+.contact-box{
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+.contact-box > div{
+    width: 50%;
+    height: fit-content;
+}
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+}
+.contact-right form textarea,
+.contact-right form input{
+    border: 1px solid #bcbcbc;
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+    padding: 0 7px;
+    border-radius: 3px;
+    color :#101010;
+    font-size: 18px;
+    caret-color: #F280CA;
+}
+.contact-right form textarea:focus,
+.contact-right form input:focus{
+    outline: none;
+}
+.contact-right form textarea{
+    height: 200px;
+    padding:7px;
+    resize: none;
+}
+.contact-right form span{
+    font-size: 25px;
+}
+.contact-right form input[type='submit']{
+    background-color: #fff;
+}
+.contact-left{
+    width: 50%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.contact-left img{
+    width: 100%;
+}

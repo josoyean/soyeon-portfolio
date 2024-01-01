@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import './Header.css';
 function Header() {
@@ -8,9 +8,8 @@ function Header() {
     var percent = (scroll / (this.document.body.offsetHeight - this.window.innerHeight)) * 100;
     setLineWidth(percent);
   })
-  // console.log(content2Ref)
-  const content2Ref = useRef();
-  const onContent2Click = (lable,e) =>{
+ 
+  const onContentClick = (lable,e) =>{
    
     let lableTag= document.querySelector(lable);
   
@@ -27,11 +26,11 @@ function Header() {
         <div className='center'>
         <img src={process.env.PUBLIC_URL +`/images/josoyeon.png`}  alt='logo' className='logo'></img>
         <ul>
-            <ListItem onClick={(e) => onContent2Click("#about-lable",e)}> {'<About />'}</ListItem>
-            <ListItem onClick={(e) => onContent2Click("#skills-lable",e)}>{'<Skills />'}</ListItem>
-            <ListItem onClick={(e) => onContent2Click("#experience-lable",e)}>{'<Experience />'}</ListItem>
-            <ListItem onClick={(e) => onContent2Click("#project-lable",e)}>{'<Projects />'}</ListItem>
-            <ListItem onClick={(e) => onContent2Click("#about-lable",e)}>{'<Contect />'}</ListItem>
+            <ListItem onClick={(e) => onContentClick("#about-lable",e)}> {'<About />'}</ListItem>
+            <ListItem onClick={(e) => onContentClick("#skills-lable",e)}>{'<Skills />'}</ListItem>
+            <ListItem onClick={(e) => onContentClick("#experience-lable",e)}>{'<Experience />'}</ListItem>
+            <ListItem onClick={(e) => onContentClick("#project-lable",e)}>{'<Projects />'}</ListItem>
+            <ListItem onClick={(e) => onContentClick("#contact-lable",e)}>{'<Contact />'}</ListItem>
         </ul>
      
         </div>
