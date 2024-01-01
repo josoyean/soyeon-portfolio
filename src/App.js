@@ -6,6 +6,7 @@ import Header from './pages/Header';
 import ProjectContent from './pages/ProjectContent';
 import SkillContent from './pages/SkillContent';
 import StarContent from './pages/StarContent';
+
 function App() {
   const color =[
     '#f2b3b3',
@@ -20,17 +21,13 @@ function App() {
   setTimeout(function() {
     window.scrollTo({top: 0, behavior: 'smooth'}); 
 }, 70);
-const starItem = () =>{
-  let arr=[];
-  for(let i=0;i<10;i++){
-    let randomPosition= Math.floor(Math.random() * 100) + 1;
-    let randomTime= Math.floor(Math.random() * 5000) + 1000;
-    let randomColor= color[Math.floor(Math.random() * color.length)];
-    arr.push(<StarContent key={i} left={randomPosition} time={randomTime} color={randomColor}></StarContent>);
-  }
 
-  return arr;
-}
+const starItem = color && color.map((item,index) => {
+      let randomPosition= Math.floor(Math.random() * 100) + 1;
+      let randomTime= Math.floor(Math.random() * 6000);
+      let randomColor= color[Math.floor(Math.random() * color.length)];
+ return <div key={index}> <StarContent left={randomPosition} time={randomTime} color={randomColor} ></StarContent></div>
+})
   return (
     <div className="App">
       <Header></Header>
@@ -41,7 +38,7 @@ const starItem = () =>{
       <ContactContent></ContactContent>
       <div className='star-box'>
       {
-        starItem()
+        starItem
       }
       </div>
       <footer>

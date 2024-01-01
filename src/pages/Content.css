@@ -245,25 +245,17 @@
     font-size: 14px;
 }
 .star-item{
-    top: 0%;
+    top: -75px;
     left: 0px;
 }
 .star-item {
-
-    /* margin: 50px 0; */
     position: relative;
     position: absolute;
     display: block;
-    
-    /* color: pink; */
     width: 150px;
     border-radius: 50%;
     height: 150px;
-    /* border-right: 100px solid transparent;
-    border-bottom: 70px solid pink;
-    border-left: 100px solid transparent; */
     transform: rotate(35deg);
-    
     animation: starTop 8000ms infinite forwards linear;
   }
 
@@ -273,7 +265,7 @@
     }
     
     from{
-        top: 0%;
+        top: -75px;
     }
   }
 .contact-box{

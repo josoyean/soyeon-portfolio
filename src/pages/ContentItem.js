@@ -22,12 +22,12 @@ function ContentItem({keyNum,LinkName,Title,Position,ItemDate,pageLink,MyWork,Sk
             <span className='position-text'>POSITION : {Position}</span>
             <span className='mywork-text'>MYWORK : {
                 MyWork.map((item,index)=>{
-                  return  <em key={index}>{item}{MyWork.length <=index+1 ? " ":", " }</em>
+                  return  <em key={item}>{item}{MyWork.length <=index+1 ? " ":", " }</em>
                 })
             }</span>
              <span className='skill-text'>SKILL : {
                 SkillText.map((item,index)=>{
-                  return  <em key={index}>{"#"+item +" "}</em>
+                  return  <em key={item}>{"#"+item +" "}</em>
                 })
             }</span>
             </div>
