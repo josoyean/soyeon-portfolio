@@ -33,10 +33,13 @@
   left: 0;
   right: 0;
 }
+#about-lable{
+    margin-top: 80px;
+    box-sizing: border-box;
+}
 .about-box {
-  margin-top: 80px;
-  box-sizing: border-box;
-  height: 520px;
+    
+    height: 520px;
   position: relative;
 }
 .profile-box {

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ContentItem from "./ContentItem";
 function ExperienceContent() {
   return (
-    <div className="center">
+    <div className="center" id='experience-lable'>
       <ProfileText>EXPERIENCE</ProfileText>
       <div className="profile-box experience-box">
         <ContentItem keyNum={4} LinkName={"project01"} SkillText={["html","css","js","jquery","thymeleaf"]} Title={"Tari World"} Position={"Web Publisher"} ItemDate={"2022.08 ~ 2023.08"} MyWork={["페이지 제작 & 유지 보수","페이지 연결, 애니메이션"]} pageLink={"https://tari.world/page/index"} CodeBtn={false}></ContentItem>

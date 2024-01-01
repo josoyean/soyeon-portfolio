@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 function SkillContent() {
   return (
-    <div className="center">
+    <div className="center" id='skills-lable' >
       <ProfileText>SKILLS</ProfileText>
       <div className="profile-box skills-content">
         <ul className="skill-box">

@@ -15,6 +15,10 @@ function App() {
     '#f2b3cb',
     '#eaf2b3',
   ]
+
+  setTimeout(function() {
+    window.scrollTo({top: 0, behavior: 'smooth'}); 
+}, 70);
 const starItem = () =>{
   let arr=[];
   for(let i=0;i<10;i++){

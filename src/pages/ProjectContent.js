@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ContentItem from "./ContentItem";
 function ProjectContent() {
   return (
-    <div className="center">
+    <div className="center" id='project-lable'>
           <ProfileText>PROJECTS</ProfileText>
           <div className="profile-box projects-box">
           <ContentItem keyNum={1} LinkName={"project11"} SkillText={["html","css","js","react","styled-components","node"]} Title={"날씨 알림이"} Position={"FrontEnd & WebPublisher"} ItemDate={"2023.06 ~ 2023.10"} MyWork={["html 마크업","css 스타일링"]} pageLink={"https://josoyean.github.io/weather-alert/"} CodeBtn={true} codeLink={"https://github.com/josoyean/weather-alert"}></ContentItem>

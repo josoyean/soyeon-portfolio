@@ -18,7 +18,7 @@ function AboutContent() {
         setInterval(typing, 150)
       },[]);
   return (
-<div className='center'>
+<div className='center' id='about-lable'>
     <div className='about-box'>
      <div className='text-box'> <span className='text'></span> <span className='cursor'>|</span></div>
      <span className='introduce'>
