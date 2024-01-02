@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
-function ContentItem({keyNum,LinkName,Title,Position,ItemDate,pageLink,MyWork,SkillText,CodeBtn,codeLink}) {
-    const DemoLink  = (link,e) =>{
+function ContentItem({handleClick,elementIndex,selectItem,LinkName,Title,Position,ItemDate,pageLink,MyWork,SkillText,CodeBtn,codeLink}) {
+  const [projectAction,setProjectAction] = useState(false); 
+  const DemoLink  = (link,e) =>{
         e.preventDefault();
         window.open(link, '_blank');
     }
@@ -10,8 +11,10 @@ function ContentItem({keyNum,LinkName,Title,Position,ItemDate,pageLink,MyWork,Sk
         window.open(link, '_blank');
     }
 
+  //console.log("selectItem",selectItem);
+
   return (
-    <div className='project-box' key={keyNum}>
+    <div className =  {`project-box ${selectItem?" action":''}`}  onClick={()=> handleClick(elementIndex)}>
          <img src={process.env.PUBLIC_URL + `/images/`+LinkName+`.png`} alt="html" ></img>
          <div className='item'>
             <div className='title-btn'>
@@ -22,7 +25,7 @@ function ContentItem({keyNum,LinkName,Title,Position,ItemDate,pageLink,MyWork,Sk
             <span className='position-text'>POSITION : {Position}</span>
             <span className='mywork-text'>MYWORK : {
                 MyWork.map((item,index)=>{
-                  return  <em key={item}>{item}{MyWork.length <=index+1 ? " ":", " }</em>
+                  return  <em key={index}>{item}{MyWork.length <=index+1 ? " ":", " }</em>
                 })
             }</span>
              <span className='skill-text'>SKILL : {

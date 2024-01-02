@@ -22,7 +22,7 @@ button {
   background-color: #f2b3dc;
   color: #40182b;
   border: none;
-  font-size: 14px;
+  font-size: 0.8rem;
   padding: 2px 5px;
   box-sizing: border-box;
   border-radius: 10px;
@@ -56,7 +56,7 @@ footer .center{
 footer span{
   position: absolute;
   color: #40182b;
-  font-size: 14px;
+  font-size: 0.8rem;
 top: 50%;
 transform: translateY(-50%);
 left: 0;
