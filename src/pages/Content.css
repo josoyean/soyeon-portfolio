@@ -83,6 +83,7 @@ html{
 .profile-box .img-inform ul {
   display: flex;
   flex-direction: column;
+  width: 50%;
   row-gap: 15px;
 }
 .profile-box .img-inform li {
@@ -171,8 +172,93 @@ html{
   font-size: 1.8rem;
   color: #f280ca;
 }
-.profile-box.projects-box,
-.profile-box.experience-box {
+.experience-box .item-box{
+    display: flex;
+    flex-direction: column;
+}
+.experience-box .item-box span.date > em,
+#experience-lable > span>em{
+    font-size: 0.7rem;
+    margin-left: 7px;
+    padding: 2px 5px;
+    box-sizing: border-box;
+    background-color: #bababa;
+    color: #fff;
+    border-radius: 3px;
+}
+.experience-box .item-box span.date > em{
+    background-color: #f280ca;
+    margin-left: 12px;
+}
+.experience-box .item-box span.date{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #575757;
+}
+.experience-box .item-box span.name{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #101010;
+    margin: 5px 0;
+}
+.experience-box .item-box span.position{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #575757;
+}
+.experience-box .list-box{
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+}
+.experience-box .list-box .title{
+    color: #101010;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.experience-box .list-box .title button{
+    color: #fff;
+    background-color: #f280ca;
+}
+.experience-box .list-box .date{
+    font-size: 1.1rem;
+}
+.experience-box .list-box li{
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.experience-box .list-box li::after{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #101010;
+    border-radius: 50%;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.experience-box .list-box .list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    /* margin: 10px 0; */
+    /* margin-bottom: 20px; */
+}
+.experience-box .list-box .skill{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #575757;
+}
+.profile-box.projects-box {
   display: grid;
   box-shadow: none;
   background-color: transparent;
@@ -338,13 +424,10 @@ html{
 .text-box {
     top: 50px;
 }
-/* .text-box .text {
-      font-size: 1.8rem;
-    }
-    .introduce {
-      font-size: 1.2rem;
-    
-  } */
+.experience-box .list-box{
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+}
   .profile-box {
     width: calc(100% - 100px);
     margin: 50px auto 50px;
@@ -380,8 +463,7 @@ html{
     height: 120px;
   }
 
-  .profile-box.projects-box,
-  .profile-box.experience-box {
+  .profile-box.projects-box {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 20px;
@@ -440,14 +522,10 @@ html{
     height: 150px;
     top: 20px;
   }
-  .cursor,
-  .text-box .text {
-    /* font-size: 16px; */
-  }
-
-  .introduce {
-    /* font-size: 13px; */
-  }
+  .experience-box .list-box{
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+}
   .profile-box {
     width: calc(100% - 100px);
     margin: 50px auto 50px;
@@ -500,8 +578,7 @@ html{
     height: 150px;
   }
 
-  .profile-box.projects-box,
-  .profile-box.experience-box {
+  .profile-box.projects-box {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
     row-gap: 10px;

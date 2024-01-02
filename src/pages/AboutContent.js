@@ -35,7 +35,7 @@ function AboutContent() {
         <li>  <img src={process.env.PUBLIC_URL +`/images/birth.png`}  alt='birth' className='item-icon'></img> <ProfileText>1996.10.16</ProfileText></li>
         <li>  <img src={process.env.PUBLIC_URL +`/images/house.png`}  alt='house' className='item-icon'></img> <ProfileText>서울특별시 광진구</ProfileText></li>
         <li>  <img src={process.env.PUBLIC_URL +`/images/email.png`}  alt='email' className='item-icon'></img> <ProfileText>dlfjswhtnals@naver.com</ProfileText></li>
-        <li>  <img src={process.env.PUBLIC_URL +`/images/graduation.png`}  alt='graduation' className='item-icon'></img> <ProfileText>한국산업기술대학교 게임공학과</ProfileText></li>
+        <li>  <img src={process.env.PUBLIC_URL +`/images/graduation.png`}  alt='graduation' className='item-icon'></img> <ProfileText>한국산업기술대학교 게임공학과 졸업</ProfileText></li>
         <li className='pointer'>  <img src={process.env.PUBLIC_URL +`/images/graduation.png`}  alt='graduation' className='item-icon'></img> <a href={process.env.PUBLIC_URL +`/이젠아카데미_수료증.pdf`} target='_blank'> <ProfileText>이젠아카데미 - 디자인 웹퍼블리셔</ProfileText></a></li>
         <li className='pointer'>  <img src={process.env.PUBLIC_URL +`/images/graduation.png`}  alt='graduation' className='item-icon'></img> <a href={process.env.PUBLIC_URL +`/패스트캠버스_수료증.pdf`} target='_blank'> <ProfileText>패스트캠퍼스 - React & Redux로 시작하는 웹 프로그래밍</ProfileText></a></li>
         <li className='pointer'>  <img src={process.env.PUBLIC_URL +`/images/github.png`}  alt='github' className='item-icon'></img> <a href="https://github.com/josoyean" target='_blank'><ProfileText>GITHUB</ProfileText></a></li>
