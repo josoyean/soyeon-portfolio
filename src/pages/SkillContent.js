@@ -184,6 +184,38 @@ function SkillContent() {
             </div>
             </div>
           </li>
+          <li>
+            <ProfileText>VSCODE</ProfileText>
+            <div className="item-card">
+            <div className="item-box">
+                <div className="item-front">
+                <img
+                src={process.env.PUBLIC_URL + `/images/vsc.png`}
+                alt="vsc"
+              ></img>
+                </div>
+              <div className="item-back">
+              <ProfileText>80%</ProfileText>
+              </div>
+            </div>
+            </div>
+          </li>
+          <li>
+            <ProfileText>INTELLIJ</ProfileText>
+            <div className="item-card">
+            <div className="item-box">
+                <div className="item-front">
+                <img
+                src={process.env.PUBLIC_URL + `/images/Intellij.png`}
+                alt="Intellij"
+              ></img>
+                </div>
+              <div className="item-back">
+              <ProfileText>80%</ProfileText>
+              </div>
+            </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>

@@ -43,9 +43,7 @@ codeLink:"https://github.com/josoyean/soyeon-portfolio"
     if(isProfileSelect[idx] === false){
       newArr[idx] = true;
     }
-
     setIsProfileSelect(newArr);
-
   };
   return (
     <div className="center" id='project-lable'>
