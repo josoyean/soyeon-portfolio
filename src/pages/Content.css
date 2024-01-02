@@ -74,6 +74,7 @@ html{
 }
 .profile-box .img-inform span {
   font-size: 1.2rem;
+  text-align: left;
 }
 .profile-box .item-icon {
   width: 40px;
