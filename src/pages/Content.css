@@ -233,6 +233,14 @@ html{
     box-sizing: border-box;
     position: relative;
 }
+.experience-box .list-box li:first-child{
+    padding-left: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.experience-box .list-box li:first-child::after{
+    content: none;
+}
 .experience-box .list-box li::after{
     display: block;
     position: absolute;
