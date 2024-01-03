@@ -168,7 +168,7 @@ function SkillContent() {
             </div>
             </div>
           </li>
-          <li>
+          {/* <li>
             <ProfileText>NEXT</ProfileText>
             <div className="item-card">
             <div className="item-box">
@@ -179,11 +179,11 @@ function SkillContent() {
               ></img>
                 </div>
               <div className="item-back">
-              <ProfileText>60%</ProfileText>
+              <ProfileText>55%</ProfileText>
               </div>
             </div>
             </div>
-          </li>
+          </li> */}
           <li>
             <ProfileText>VSCODE</ProfileText>
             <div className="item-card">

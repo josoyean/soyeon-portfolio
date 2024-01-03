@@ -43,8 +43,8 @@ function ExperienceContent() {
           <span className="position">웹 퍼블리셔 & 프론트엔드</span>
           <div className="list-box">
             <div className="list">
-            <span className="title">Tari Market     <button onClick={ (e) => {DemoLink("https://v2.tarimarket.io/page/index?lang=en&mode=null",e)}}>Demo</button></span>
-            <span className="date">23.11 ~ 23.12</span>
+            <span className="title">Tari Market     <button onClick={ (e) => {DemoLink("https://v2.tarimarket.io/page/index?lang=en&mode=null",e)}}>Page Open</button></span>
+            <span className="date">2023.11 ~ 2023.12</span>
             <ul>
             <li>로그인 유뮤 확인 후 다른 페이지 오픈</li>
             <li>닉네임,프로필 사진 등등 개인 정보 및 제품 등록 변경, 저장</li>
@@ -54,7 +54,7 @@ function ExperienceContent() {
             </div>
          
              <div className="list">
-            <span className="title">K-POP SEOUL  <button onClick={ (e) => {DemoLink("https://korea.seoulmusicawards.kr/page/index?lang=ko&platform=k&mode=pc",e)}}>Demo</button></span>
+            <span className="title">K-POP SEOUL  <button onClick={ (e) => {DemoLink("https://korea.seoulmusicawards.kr/page/index?lang=ko&platform=k&mode=pc",e)}}>Page Open</button></span>
             <span className="date">2023.10 ~ 2023.12</span>
             <ul>
             <li>설정한 시간과 현재 시간 비교 후 공지 팝업 오픈</li>
@@ -65,17 +65,17 @@ function ExperienceContent() {
           <span className="skill"> #html #css #js #jquery #thymeleaf</span>
           </div> 
             <div className="list">
-            <span className="title">SeoulMusicaWards  <button onClick={ (e) => {DemoLink("https://seoulmusicawards.com/page/index",e)}}>Demo</button></span>
+            <span className="title">SeoulMusicaWards  <button onClick={ (e) => {DemoLink("https://seoulmusicawards.com/page/index",e)}}>Page Open</button></span>
             <span className="date">2023.10 ~ 2023.11</span>
             <ul>
             <li>접속 언어 확인 후 설정되어 있는 번역 문장 보여줌</li>
             <li>투표 결과 상위권만 보여줌</li>
-            <li>투표 데이터 JSON파일 이용해서 설정</li>
+            <li>투표 데이터 JSON 데이터 이용해서 설정</li>
           </ul>
           <span className="skill"> #html #css #js #jquery #thymeleaf</span>
             </div>
             <div className="list">
-            <span className="title">Tari World  <button onClick={ (e) => {DemoLink("https://tari.world/page/index",e)}}>Demo</button></span>
+            <span className="title">Tari World  <button onClick={ (e) => {DemoLink("https://tari.world/page/index",e)}}>Page Open</button></span>
             <span className="date">2022.08 ~ 2023.08</span>
             <ul>
             <li>페이지 작업 & 유지 보수</li>
