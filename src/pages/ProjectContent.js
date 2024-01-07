@@ -89,7 +89,7 @@ codeLink:"https://github.com/josoyean/tving"
           <div className="profile-box projects-box">
             {
               projectList.map((item,index)=>{
-                  return <ContentItem selectItem={isProfileSelect[index]} handleClick={handleClick} key={item.id.toString()} elementIndex={index}  LinkName={item.LinkName} SkillText={item.SkillText} Title={item.Title} Position={item.Position} MyWork={item.MyWork} ItemDate={item.ItemDate} pageLink={item.pageLink} CodeBtn={item.CodeBtn} codeLink={item.codeLink}> </ContentItem>
+                  return <ContentItem selectItem={isProfileSelect[index]} handleClick={handleClick} key={item.id} elementIndex={index}  LinkName={item.LinkName} SkillText={item.SkillText} Title={item.Title} Position={item.Position} MyWork={item.MyWork} ItemDate={item.ItemDate} pageLink={item.pageLink} CodeBtn={item.CodeBtn} codeLink={item.codeLink}> </ContentItem>
                  })
             }
 
