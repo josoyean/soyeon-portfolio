@@ -31,10 +31,10 @@ button {
   position: relative;
 }
 .App > * {
-  z-index: 9;
+  /* z-index: 9; */
 }
 .App .star-box {
-  z-index: 7;
+  z-index: -1;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -43,21 +43,64 @@ button {
   width: 100vw;
   height: 100vh;
 }
-footer{
+footer {
   position: relative;
   width: 100vw;
-  border-top: 1px solid #F2B3DC;
+  border-top: 1px solid #f2b3dc;
   background-color: #fff;
   height: 100px;
 }
-footer .center{
+footer .center {
   height: 100px;
 }
-footer span{
+footer span {
   position: absolute;
   color: #40182b;
   font-size: 0.8rem;
-top: 50%;
-transform: translateY(-50%);
-left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.popup .content {
+  width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: fit-content;
+  right: 0;
+  margin: auto;
+}
+.popup .main {
+  display: flex;
+}
+.popup .main > img {
+  width: 300px;
+  margin: 0;
+}
+.popup .content .infor-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  justify-content: center;
+}
+.popup .content .infor-box span {
+  font-size: 1.1rem;
+  color: #828282;
+}
+.popup .content .infor-box span.skillText em {
+  /* background-color: #f2b3dc;
+  padding: 0 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: #000; */
+}
+.popup .content .infor-box span em:first-child {
+  margin-left: 5px;
 }

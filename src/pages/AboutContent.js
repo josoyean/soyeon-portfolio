@@ -22,7 +22,6 @@ function AboutContent() {
     <div className="center" id="about-lable">
       <div className="about-box">
         <div className="text-box">
-          {" "}
           <span className="text"></span> <span className="cursor">|</span>
         </div>
         <span className="introduce">
@@ -48,21 +47,19 @@ function AboutContent() {
           ></img>
           <ul>
             <li>
-              {" "}
               <img
                 src={process.env.PUBLIC_URL + `/images/person.png`}
                 alt="person"
                 className="item-icon"
-              ></img>{" "}
+              ></img>
               <ProfileText>조소연</ProfileText>
             </li>
             <li>
-              {" "}
               <img
                 src={process.env.PUBLIC_URL + `/images/birth.png`}
                 alt="birth"
                 className="item-icon"
-              ></img>{" "}
+              ></img>
               <ProfileText>1996.10.16</ProfileText>
             </li>
             <li>
