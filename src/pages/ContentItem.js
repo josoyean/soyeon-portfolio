@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import PopupContent from "./PopupContent";
 function ContentItem({
@@ -7,24 +7,33 @@ function ContentItem({
   selectItem,
   LinkName,
   item,
+  closeClick,
 }) {
-  const [projectAction, setProjectAction] = useState(false);
   const DemoLink = (link, e) => {
     e.preventDefault();
     window.open(link, "_blank");
   };
+
   const CodeLink = (link, e) => {
     e.preventDefault();
     window.open(link, "_blank");
   };
 
   return (
-    <div className="project-box" onClick={() => handleClick(elementIndex)}>
+    <div className="project-box" onClick={(e) => handleClick(elementIndex, e)}>
       <img
         src={process.env.PUBLIC_URL + `/images/` + LinkName + `.png`}
         alt="html"
       ></img>
-      {selectItem && <PopupContent item={item}></PopupContent>}
+      {console.log("selectItem", selectItem)}
+      {selectItem && (
+        <PopupContent
+          item={item}
+          key={elementIndex}
+          closeClick={closeClick}
+          elementIndex={elementIndex}
+        ></PopupContent>
+      )}
     </div>
   );
 }

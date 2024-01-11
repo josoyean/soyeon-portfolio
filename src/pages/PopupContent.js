@@ -1,11 +1,37 @@
 import React from "react";
 import styled from "styled-components";
 
-function PopupContent({ item }) {
+function PopupContent({ item, closeClick, elementIndex }) {
   console.log(item);
+  const DemoLink = (link, e) => {
+    e.preventDefault();
+    window.open(link, "_blank");
+  };
   return (
     <Popup className="popup">
       <div className="content">
+        <div className="btn-box">
+          <button
+            onClick={(e) => {
+              DemoLink(`${item.pageLink}`, e);
+            }}
+          >
+            Page Open
+          </button>
+          <button
+            onClick={(e) => {
+              DemoLink(`${item.codeLink}`, e);
+            }}
+          >
+            Git Open
+          </button>
+          <button
+            className="close"
+            onClick={(e) => closeClick(elementIndex, e)}
+          >
+            X
+          </button>
+        </div>
         <div className="main">
           <img
             src={process.env.PUBLIC_URL + `/images/` + item.LinkName + `.png`}
@@ -21,16 +47,24 @@ function PopupContent({ item }) {
                 if (index === item.MyWork.length - 1) {
                   itemText = items;
                 }
-                return <em>{itemText} </em>;
+                return <em key={index}>{itemText} </em>;
               })}
             </span>
             <span className="skillText">
               SKILLS :
-              {item.SkillText.map((items) => {
-                return <em>{"#" + items} </em>;
+              {item.SkillText.map((items, index) => {
+                return <em key={index}>{"#" + items} </em>;
               })}
             </span>
           </div>
+        </div>
+        <div className="sub">
+          <span>JOB ROLE</span>
+          <ul className="job-box">
+            {item.part.map((items, index) => {
+              return <li key={index}>{items} </li>;
+            })}
+          </ul>
         </div>
       </div>
     </Popup>

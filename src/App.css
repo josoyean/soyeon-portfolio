@@ -63,11 +63,12 @@ footer span {
 }
 
 .popup .content {
-  width: 800px;
+  width: 600px;
   padding: 20px;
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 5px;
+  position: relative;
   position: absolute;
   top: 0;
   left: 0;
@@ -76,8 +77,28 @@ footer span {
   right: 0;
   margin: auto;
 }
+.project-box .popup .btn-box {
+  bottom: unset;
+  top: 10px;
+  left: unset;
+  right: 10px;
+}
+.project-box .popup .btn-box button {
+  color: #fff;
+  background-color: #f280ca;
+}
+.project-box .popup .btn-box button.close {
+  color: #000;
+  font-size: 1.2rem;
+  background-color: transparent;
+}
 .popup .main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #aaaaaa;
+  box-sizing: border-box;
+  padding-bottom: 20px;
 }
 .popup .main > img {
   width: 300px;
@@ -89,18 +110,31 @@ footer span {
   row-gap: 7px;
   justify-content: center;
 }
-.popup .content .infor-box span {
+.popup .content .main .infor-box span {
   font-size: 1.1rem;
   color: #828282;
 }
-.popup .content .infor-box span.skillText em {
-  /* background-color: #f2b3dc;
-  padding: 0 5px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  margin-right: 10px;
-  color: #000; */
-}
-.popup .content .infor-box span em:first-child {
+
+.popup .content .main .infor-box span em:first-child {
   margin-left: 5px;
+}
+.popup .sub {
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.popup .sub > span {
+  font-size: 1.1rem;
+  text-align: center;
+  display: block;
+  color: #828282;
+}
+.popup .sub .job-box {
+  margin-top: 7px;
+}
+.popup .sub .job-box li {
+  list-style: circle;
+  margin-left: 20px;
+  color: #828282;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
