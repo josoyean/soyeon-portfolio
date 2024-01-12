@@ -257,8 +257,6 @@ html {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
-  /* margin: 10px 0; */
-  /* margin-bottom: 20px; */
 }
 .experience-box .list-box .skill {
   font-size: 1rem;
@@ -309,11 +307,7 @@ html {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.project-box:hover .item {
-  /* top: 0; */
-  /* opacity: 1; */
-  /* transition: all 700ms; */
-}
+
 .project-box .title-btn {
   align-items: center;
   justify-content: space-between;
@@ -406,6 +400,84 @@ html {
 .contact-left img {
   width: 100%;
 }
+
+.popup .content {
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: fit-content;
+  right: 0;
+  margin: auto;
+}
+.project-box .popup .btn-box {
+  bottom: unset;
+  top: 10px;
+  left: unset;
+  right: 10px;
+}
+.project-box .popup .btn-box button {
+  color: #fff;
+  background-color: #f280ca;
+}
+.project-box .popup .btn-box button.close {
+  color: #000;
+  font-size: 1.2rem;
+  background-color: transparent;
+}
+.popup .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #aaaaaa;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+.popup .main > img {
+  width: 300px;
+  margin: 0;
+}
+.popup .content .infor-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  justify-content: center;
+}
+.popup .content .main .infor-box span {
+  font-size: 1.1rem;
+  color: #828282;
+}
+
+.popup .content .main .infor-box span em:first-child {
+  margin-left: 5px;
+}
+.popup .sub {
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.popup .sub > span {
+  font-size: 1.1rem;
+  text-align: center;
+  display: block;
+  color: #828282;
+}
+.popup .sub .job-box {
+  margin-top: 7px;
+}
+.popup .sub .job-box li {
+  list-style: circle;
+  margin-left: 20px;
+  color: #828282;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
 /* 태블릿 pc 사이즈 */
 @media (min-width: 768px) and (max-width: 992px) {
   html {
@@ -424,9 +496,6 @@ html {
   #about-lable {
     margin-top: 60px;
   }
-  header li {
-    /* font-size: 16px !important; */
-  }
 
   .text-box {
     top: 50px;
@@ -439,10 +508,7 @@ html {
     width: calc(100% - 100px);
     margin: 50px auto 50px;
   }
-  .project-box:hover .item {
-    /* top: 100%; */
-    /* transition: all 700ms; */
-  }
+
   .project-box.action .item {
     top: 0;
     opacity: 1;
@@ -490,6 +556,13 @@ html {
   footer .center,
   footer {
     height: 70px;
+  }
+
+  .popup .content {
+    width: 500px;
+  }
+  .popup .main > img {
+    width: 250px;
   }
 }
 
@@ -539,10 +612,6 @@ html {
   .img-inform {
     flex-direction: column;
     align-items: center;
-  }
-  .project-box:hover .item {
-    /* top: 100%; */
-    /* transition: all 700ms; */
   }
   .project-box.action .item {
     top: 0;
@@ -626,5 +695,12 @@ html {
   footer .center,
   footer {
     height: 70px;
+  }
+
+  .popup .content {
+    width: calc(100vw - 100px);
+  }
+  .popup .main > img {
+    width: 200px;
   }
 }
