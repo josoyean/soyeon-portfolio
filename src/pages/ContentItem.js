@@ -25,7 +25,6 @@ function ContentItem({
         src={process.env.PUBLIC_URL + `/images/` + LinkName + `.png`}
         alt="html"
       ></img>
-      {console.log("selectItem", selectItem)}
       {selectItem && (
         <PopupContent
           item={item}

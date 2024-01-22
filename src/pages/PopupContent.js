@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 function PopupContent({ item, closeClick, elementIndex }) {
-  console.log(item);
   const DemoLink = (link, e) => {
     e.preventDefault();
     window.open(link, "_blank");
