@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function PopupContent({ item, closeClick, elementIndex }) {
+function PopupContent({ item, closeClick, elementIndex, pageBtn }) {
   const DemoLink = (link, e) => {
     e.preventDefault();
     window.open(link, "_blank");
@@ -10,13 +10,18 @@ function PopupContent({ item, closeClick, elementIndex }) {
     <Popup className="popup">
       <div className="content">
         <div className="btn-box">
-          <button
-            onClick={(e) => {
-              DemoLink(`${item.pageLink}`, e);
-            }}
-          >
-            Page Open
-          </button>
+          {pageBtn ? (
+            <button
+              onClick={(e) => {
+                DemoLink(`${item.pageLink}`, e);
+              }}
+            >
+              Page Open
+            </button>
+          ) : (
+            ""
+          )}
+
           <button
             onClick={(e) => {
               DemoLink(`${item.codeLink}`, e);

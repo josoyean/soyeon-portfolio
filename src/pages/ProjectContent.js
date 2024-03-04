@@ -4,6 +4,20 @@ import ContentItem from "./ContentItem";
 function ProjectContent() {
   const projectList = [
     {
+      id: "04",
+      LinkName: "project14",
+      SkillText: ["html", "css", "js", "react", "tailwindcss", "node"],
+      Position: "FrontEnd",
+      Title: "catchtable",
+      ItemDate: "2024.02 ~ 작업중",
+      MyWork: ["로그인 페이지", "예약 페이지"],
+      pageLink: "https://josoyean.github.io/soyeon-portfolio",
+      CodeBtn: true,
+      pageBtn: false,
+      codeLink: "https://github.com/sky-catch/Front",
+      part: ["카카오 로그인 연동", "<tailwindcss> 이용해서 css 적용"],
+    },
+    {
       id: "03",
       LinkName: "project13",
       SkillText: ["html", "css", "js", "react", "styled-components", "node"],
@@ -13,6 +27,7 @@ function ProjectContent() {
       MyWork: ["html 마크업", "css 스타일링"],
       pageLink: "https://josoyean.github.io/soyeon-portfolio",
       CodeBtn: true,
+      pageBtn: true,
       codeLink: "https://github.com/josoyean/soyeon-portfolio",
       part: [
         "반응형,원페이지",
@@ -31,6 +46,7 @@ function ProjectContent() {
       MyWork: ["html 마크업", "css 스타일링"],
       pageLink: "https://josoyean.github.io/tving",
       CodeBtn: true,
+      pageBtn: true,
       codeLink: "https://github.com/josoyean/tving",
       part: [
         "프로그램 JSON 데이터 제작후 분류해서 제작",
@@ -48,6 +64,7 @@ function ProjectContent() {
       MyWork: ["html 마크업", "css 스타일링"],
       pageLink: "https://josoyean.github.io/weather-alert",
       CodeBtn: true,
+      pageBtn: true,
       codeLink: "https://github.com/josoyean/weather-alert",
       part: [
         "기상청 api 2개 이용해서 제작",
@@ -92,6 +109,7 @@ function ProjectContent() {
               Title={item.Title}
               Position={item.Position}
               MyWork={item.MyWork}
+              pageBtn={item.pageBtn}
               ItemDate={item.ItemDate}
               pageLink={item.pageLink}
               CodeBtn={item.CodeBtn}
