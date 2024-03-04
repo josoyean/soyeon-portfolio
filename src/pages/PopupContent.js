@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function PopupContent({ item, closeClick, elementIndex, pageBtn }) {
+function PopupContent({ item, closeClick, elementIndex, pageBtn, introduce }) {
   const DemoLink = (link, e) => {
     e.preventDefault();
     window.open(link, "_blank");
@@ -70,6 +70,10 @@ function PopupContent({ item, closeClick, elementIndex, pageBtn }) {
             })}
           </ul>
         </div>
+        <Introduce className="">
+          {" "}
+          <span className="">{introduce}</span>
+        </Introduce>
       </div>
     </Popup>
   );
@@ -87,4 +91,14 @@ const Popup = styled.div`
   bottom: 0;
   z-index: 999999 !important;
   background-color: rgba(0, 0, 0, 0.7);
+`;
+
+const Introduce = styled.div`
+  padding-top: 20px;
+  box-sizing: border-box;
+  border-top: 1px solid #aaaaaa;
+  & span {
+    font-size: 1.1rem;
+    color: #828282;
+  }
 `;

@@ -9,6 +9,7 @@ function ContentItem({
   item,
   closeClick,
   pageBtn,
+  introduce,
 }) {
   const DemoLink = (link, e) => {
     e.preventDefault();
@@ -29,6 +30,7 @@ function ContentItem({
       {selectItem && (
         <PopupContent
           item={item}
+          introduce={introduce}
           pageBtn={pageBtn}
           key={elementIndex}
           closeClick={closeClick}

@@ -462,6 +462,7 @@ header .hamburger {
 }
 .popup .sub {
   padding-top: 20px;
+  padding-bottom: 20px;
   box-sizing: border-box;
 }
 .popup .sub > span {
