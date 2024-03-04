@@ -72,7 +72,6 @@ header .hamburger {
 .profile-box .img-inform > img {
   width: 300px;
   height: auto;
-  border-radius: 50%;
 }
 .profile-box .img-inform span {
   font-size: 1.2rem;

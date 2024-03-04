@@ -4,7 +4,7 @@ import "./Content.css";
 function AboutContent() {
   useEffect(() => {
     const content =
-      "안녕하세요.  & 주니어 Front-end Development & 조소연 포트폴리오 페이지 입니다. :)";
+      "안녕하세요. & 주니어 Front-end Development & 조소연 포트폴리오 페이지 입니다. :)";
     const text = document.querySelector(".text");
     let i = 0;
 
@@ -41,7 +41,7 @@ function AboutContent() {
         <ProfileText>ABOUT</ProfileText>
         <div className="img-inform">
           <img
-            src={process.env.PUBLIC_URL + `/images/profile.jpg`}
+            src={process.env.PUBLIC_URL + `/images/profile.png`}
             alt="profile"
             className="profile"
           ></img>
