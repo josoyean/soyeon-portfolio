@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/soyeon-portfolio/static/css/main.c7e7304a.css",
-    "main.js": "/soyeon-portfolio/static/js/main.ab09e6c0.js",
+    "main.css": "/soyeon-portfolio/static/css/main.360fddd4.css",
+    "main.js": "/soyeon-portfolio/static/js/main.80e18d5f.js",
     "static/js/787.f49565fd.chunk.js": "/soyeon-portfolio/static/js/787.f49565fd.chunk.js",
     "index.html": "/soyeon-portfolio/index.html",
-    "main.c7e7304a.css.map": "/soyeon-portfolio/static/css/main.c7e7304a.css.map",
-    "main.ab09e6c0.js.map": "/soyeon-portfolio/static/js/main.ab09e6c0.js.map",
+    "main.360fddd4.css.map": "/soyeon-portfolio/static/css/main.360fddd4.css.map",
+    "main.80e18d5f.js.map": "/soyeon-portfolio/static/js/main.80e18d5f.js.map",
     "787.f49565fd.chunk.js.map": "/soyeon-portfolio/static/js/787.f49565fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7e7304a.css",
-    "static/js/main.ab09e6c0.js"
+    "static/css/main.360fddd4.css",
+    "static/js/main.80e18d5f.js"
   ]
 }
