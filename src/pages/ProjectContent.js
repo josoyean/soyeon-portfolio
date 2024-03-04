@@ -14,7 +14,7 @@ function ProjectContent() {
       pageLink: "https://josoyean.github.io/soyeon-portfolio",
       CodeBtn: true,
       pageBtn: false,
-      codeLink: "https://github.com/sky-catch/Front",
+      codeLink: "https://github.com/sky-catch/Front/tree/develop",
       part: ["카카오 로그인 연동", "<tailwindcss> 이용해서 css 적용"],
     },
     {
