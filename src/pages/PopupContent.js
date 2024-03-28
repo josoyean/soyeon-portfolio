@@ -37,10 +37,14 @@ function PopupContent({ item, closeClick, elementIndex, pageBtn, introduce }) {
           </button>
         </div>
         <div className="main">
+          <Introduce className="">
+            <span className="">{introduce}</span>
+          </Introduce>
           <img
             src={process.env.PUBLIC_URL + `/images/` + item.LinkName + `.png`}
             alt="html"
           ></img>
+
           <div className="infor-box">
             <span className="date"> DATE : {item.ItemDate}</span>
             <span className="position"> POSITION : {item.Position}</span>
@@ -63,17 +67,13 @@ function PopupContent({ item, closeClick, elementIndex, pageBtn, introduce }) {
           </div>
         </div>
         <div className="sub">
-          <span>JOB ROLE</span>
+          <span>구현 기능</span>
           <ul className="job-box">
             {item.part.map((items, index) => {
               return <li key={index}>{items} </li>;
             })}
           </ul>
         </div>
-        <Introduce className="">
-          {" "}
-          <span className="">{introduce}</span>
-        </Introduce>
       </div>
     </Popup>
   );
@@ -94,11 +94,11 @@ const Popup = styled.div`
 `;
 
 const Introduce = styled.div`
-  padding-top: 20px;
+  /* padding-top: 20px; */
   box-sizing: border-box;
-  border-top: 1px solid #aaaaaa;
+  /* border-top: 1px solid #aaaaaa; */
   & span {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #828282;
   }
 `;

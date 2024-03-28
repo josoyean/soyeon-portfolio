@@ -17,7 +17,7 @@ function SkillContent() {
                   ></img>
                 </div>
                 <div className="item-back">
-                  <ProfileText>85%</ProfileText>
+                  <ProfileInfor>브라우저에 콘텐츠 표시</ProfileInfor>
                 </div>
               </div>
             </div>
@@ -33,7 +33,7 @@ function SkillContent() {
                   ></img>
                 </div>
                 <div className="item-back">
-                  <ProfileText>85%</ProfileText>
+                  <ProfileInfor>html문서에 스타일 적용</ProfileInfor>
                 </div>
               </div>
             </div>
@@ -49,7 +49,7 @@ function SkillContent() {
                   ></img>
                 </div>
                 <div className="item-back">
-                  <ProfileText>80%</ProfileText>
+                  <ProfileInfor>웹페이지 동작 구현</ProfileInfor>
                 </div>
               </div>
             </div>
@@ -65,7 +65,10 @@ function SkillContent() {
                   ></img>
                 </div>
                 <div className="item-back">
-                  <ProfileText>80%</ProfileText>
+                  <ProfileInfor>
+                    웹페이지 상에서 엘리먼트를 쉽게 찾고 조작해서 웹페이지 동작
+                    구현
+                  </ProfileInfor>
                 </div>
               </div>
             </div>
@@ -81,11 +84,33 @@ function SkillContent() {
                   ></img>
                 </div>
                 <div className="item-back">
-                  <ProfileText>75%</ProfileText>
+                  <ProfileInfor>
+                    컴포넌트를 재사용과 유지보수가 쉽고 많은 커뮤니티가 있어
+                    선택하게 되었습니다.
+                  </ProfileInfor>
                 </div>
               </div>
             </div>
           </li>
+          <li>
+            <ProfileText>Redux</ProfileText>
+            <div className="item-card">
+              <div className="item-box">
+                <div className="item-front">
+                  <img
+                    src={process.env.PUBLIC_URL + `/images/Redux.png`}
+                    alt="react"
+                  ></img>
+                </div>
+                <div className="item-back">
+                  <ProfileInfor>
+                    자식 컴포넌트가 많아지면 상태관리가 복잡해지는데 이를 해결
+                  </ProfileInfor>
+                </div>
+              </div>
+            </div>
+          </li>
+
           <li>
             <ProfileText>Styled-Components</ProfileText>
             <div className="item-card">
@@ -99,28 +124,30 @@ function SkillContent() {
                   ></img>
                 </div>
                 <div className="item-back">
-                  <ProfileText>75%</ProfileText>
+                  <ProfileInfor>
+                    재사용성이 높고, 스타일링을 간편하게 적용
+                  </ProfileInfor>
                 </div>
               </div>
             </div>
           </li>
           <li>
-            <ProfileText>XD</ProfileText>
+            <ProfileText>React-Query</ProfileText>
             <div className="item-card">
               <div className="item-box">
                 <div className="item-front">
                   <img
-                    src={process.env.PUBLIC_URL + `/images/xd.png`}
+                    src={process.env.PUBLIC_URL + `/images/react-query.png`}
                     alt="xd"
                   ></img>
                 </div>
                 <div className="item-back">
-                  <ProfileText>80%</ProfileText>
+                  <ProfileInfor>에러처리,중복방지를 자동으로 적용</ProfileInfor>
                 </div>
               </div>
             </div>
           </li>
-          <li>
+          {/* <li>
             <ProfileText>FIGMA</ProfileText>
             <div className="item-card">
               <div className="item-box">
@@ -135,7 +162,7 @@ function SkillContent() {
                 </div>
               </div>
             </div>
-          </li>
+          </li> */}
           <li>
             <ProfileText>GITHUB</ProfileText>
             <div className="item-card">
@@ -147,7 +174,7 @@ function SkillContent() {
                   ></img>
                 </div>
                 <div className="item-back">
-                  <ProfileText>70%</ProfileText>
+                  <ProfileInfor>프로젝트 협업</ProfileInfor>
                 </div>
               </div>
             </div>
@@ -163,7 +190,9 @@ function SkillContent() {
                   ></img>
                 </div>
                 <div className="item-back">
-                  <ProfileText>70%</ProfileText>
+                  <ProfileInfor>
+                    백엔드 서버에서 html동적으로 렌더링
+                  </ProfileInfor>
                 </div>
               </div>
             </div>
@@ -179,12 +208,14 @@ function SkillContent() {
                   ></img>
                 </div>
                 <div className="item-back">
-                  <ProfileText>65%</ProfileText>
+                  <ProfileInfor>
+                    코드가 일반 css보다 짧아 스타일을 빠르게 적용
+                  </ProfileInfor>
                 </div>
               </div>
             </div>
           </li>
-          <li>
+          {/* <li>
             <ProfileText>VSCODE</ProfileText>
             <div className="item-card">
               <div className="item-box">
@@ -199,8 +230,8 @@ function SkillContent() {
                 </div>
               </div>
             </div>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <ProfileText>INTELLIJ</ProfileText>
             <div className="item-card">
               <div className="item-box">
@@ -215,7 +246,7 @@ function SkillContent() {
                 </div>
               </div>
             </div>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
@@ -227,7 +258,17 @@ export default SkillContent;
 const ProfileText = styled.span`
   color: #101010;
   font-size: 30px;
-  display: block;
+  display: none;
+  /* display: block; */
+  text-align: center;
+  font-weight: 500;
+`;
+
+const ProfileInfor = styled.span`
+  color: #101010;
+  font-size: 30px;
+  /* display: none; */
+  /* display: block; */
   text-align: center;
   font-weight: 500;
 `;

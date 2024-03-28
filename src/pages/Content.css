@@ -132,11 +132,12 @@ header .hamburger {
   width: 150px;
   height: 150px;
 }
+
 .skill-box .item-box > * {
   position: absolute;
   width: 150px;
   height: 150px;
-  backface-visibility: hidden; /* 추가 */
+  backface-visibility: hidden;
 }
 .skill-box .item-card {
   perspective: 1100px;
@@ -149,11 +150,11 @@ header .hamburger {
   width: 150px;
   height: 150px;
   display: inline-block;
-  transition: transform 0.3s; /* 추가 */
-  transform: perspective(800px) rotateY(0deg); /* 추가 */
+  transition: transform 0.3s;
+  transform: perspective(800px) rotateY(0deg);
 }
 .skill-box .item-card:hover {
-  transform: perspective(800px) rotateY(180deg); /* 추가 */
+  transform: perspective(800px) rotateY(180deg);
 }
 .skill-box .item-card:hover .item-back {
   transform: rotateY(180deg);
@@ -170,7 +171,7 @@ header .hamburger {
 
 .skill-box .item-back span {
   transform: rotateY(180deg);
-  font-size: 1.8rem;
+  font-size: 0.8rem;
   color: #f280ca;
 }
 .experience-box .item-box {
@@ -701,13 +702,13 @@ header .close {
   .skill-box .item-box img,
   .skill-box .item-box > * {
     width: 100%;
-    height: auto;
+    /* height: auto; */
     /* height: 100%; */
     /* width: 150px; */
     /* height: 150px; */
   }
   .skill-box .item-box {
-    height: 120px;
+    /* height: 120px; */
     /* height: fit-content; */
   }
   .skill-box .item-box > * {
