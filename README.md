@@ -37,7 +37,7 @@ lang - styled-components , react
 
 #### 2) 시간차 랜덤으로 내려오게 애니메이션
 
-<img src='https://github.com/josoyean/soyeon-portfolio/assets/31685570/788189a6-149f-4873-8804-275005471d12' />
+<img src='https://github.com/josoyean/soyeon-portfolio/assets/31685570/7da27c4a-a286-4c89-9ee4-f3d82dd57803' />
 
 [##_ImageGrid|kage@cpt7ku/btsGaYgl2yZ/rsoF4CnsX3qs9Tt5lzLVf1/img.png,kage@bcsApD/btsGbQWo9YV/HJTgqU0uJ6UUXTH5PL3kC0/img.png|data-is-animation="false" data-origin-width="1038" data-origin-height="914" data-filename="스크린샷 2024-03-28 오후 6.08.31.png" style="width: 45.5833%; margin-right: 10px;" data-widthpercent="46.12",data-is-animation="false" data-origin-width="674" data-origin-height="508" data-filename="스크린샷 2024-03-28 오후 6.09.01.png" data-widthpercent="53.88" style="width: 53.2539%;"|_##]
 
