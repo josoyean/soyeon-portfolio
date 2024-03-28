@@ -2,7 +2,9 @@
 <img src='https://github.com/josoyean/soyeon-portfolio/assets/31685570/1283ee32-2fce-44c7-b9d9-15efbb563b18' />
 </a>
 
-위 사진을 클릭하시면 페이지 관련 블로그로 이동합니다.
+<div align=center>
+# 위 사진을 클릭하시면 페이지 관련 블로그로 이동합니다.
+</div>
 
 ## **Intor**
 
