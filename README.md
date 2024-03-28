@@ -33,7 +33,7 @@ lang - styled-components , react
 
 [##_Image|kage@b0Aes5/btsF88qVk6s/3kvvfhKb2WBlJOwKoEHIB1/img.gif|CDM|1.3|{"originWidth":1120,"originHeight":470,"style":"alignCenter","width":598,"height":251,"filename":"5eb264cc-2a38-48cc-ab3a-3b811ff9b42e.gif"}_##]
 
-[##_Image|kage@tMh3B/btsF9c7TKzr/yVxWKD2Vt6wEBni6EZEgx1/img.png|CDM|1.3|{"originWidth":1086,"originHeight":554,"style":"alignCenter","width":470,"filename":"스크린샷 2024-03-28 오후 5.54.18.png"}_##][##_Image|kage@ba5DdT/btsF9dlrOYr/P1ORakKQCZrdQNCSlkTpf1/img.png|CDM|1.3|{"originWidth":966,"originHeight":106,"style":"alignCenter","width":467,"filename":"스크린샷 2024-03-28 오후 5.54.36.png"}_##]
+<img src='https://github.com/josoyean/soyeon-portfolio/assets/31685570/9329c0c6-085f-4d78-bc41-689f34afd5da' />
 
 타이핑 하고 싶은 문구를 지정하고 0.15초 마다 typing를 호출 한다. typing은 문구를 하나씩 넣어주는데 &가 있으면 줄바꿈 태그를 넣어 주면 되고 없으면 그 문자 그대로 값을 넣어 타이핑 효과를 줬습니다. 문구가 끝나면 초기화를 하고 다시 처음부터 작업 하게하면 된다.
 
