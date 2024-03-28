@@ -41,7 +41,7 @@ lang - styled-components , react
 
 #### 1) 문장 타이핑 애니메이션
 
-<img src='https://github.com/josoyean/soyeon-portfolio/assets/31685570/9994f576-4420-4c49-91b2-4a15de9a3c9d' width="200" height="400" />
+<img src='https://github.com/josoyean/soyeon-portfolio/assets/31685570/9994f576-4420-4c49-91b2-4a15de9a3c9d' width="500" height="400" />
 
 
 
