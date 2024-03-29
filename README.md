@@ -35,8 +35,3 @@ ang - styled-components,react,html,css,javascript
 - PC버전에서 스킬 이미지에 마우스 올리면 카드 뒤집는 애니메이션 적용  
   
 - emailjs 이용해서 폼 작성시 이메일 받고 작성자는 자동 회신 설정
-
----
-
-
-
