@@ -1,5 +1,7 @@
 
-[![블로그](https://github.com/josoyean/soyeon-portfolio/assets/31685570/1283ee32-2fce-44c7-b9d9-15efbb563b18)](https://saltsoyeon.tistory.com/52)
+[🔗](https://saltsoyeon.tistory.com/52)
+**블로그 바로가기**
+
 
 <div align=center>
   
