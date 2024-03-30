@@ -54,7 +54,7 @@ ang - styled-components,react,html,css,javascript
 Email.js를 이용해서 포트폴리오 내에서 이메일 전송되도록 구현했습니다. 
 메일을 전송되면 input,textarea를 초기화를 했습니다.
 
----
+-
 
 ## **회고록**
 
