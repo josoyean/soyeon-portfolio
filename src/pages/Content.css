@@ -193,7 +193,7 @@ header .hamburger {
   margin-left: 12px;
 }
 .experience-box .item-box span.date {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #575757;
 }
@@ -221,28 +221,34 @@ header .hamburger {
   align-items: center;
   column-gap: 10px;
 }
+.experience-box .list-box .list em {
+  color: #101010;
+  font-size: 1rem;
+  /* display: flex;
+  align-items: center;
+  column-gap: 10px; */
+}
+
 .experience-box .list-box .title button {
   color: #fff;
   background-color: #f280ca;
 }
-.experience-box .list-box .date {
-  font-size: 1.1rem;
-}
+
 .experience-box .list-box li {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-bottom: 2px;
   padding-left: 15px;
   box-sizing: border-box;
   position: relative;
 }
-.experience-box .list-box li:first-child {
-  padding-left: 0;
-  font-size: 0.9rem;
-  font-weight: 500;
+.experience-box .list-box .list > div span {
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+  padding-left: 0px;
+  box-sizing: border-box;
+  position: relative;
 }
-.experience-box .list-box li:first-child::after {
-  content: none;
-}
+
 .experience-box .list-box li::after {
   display: block;
   position: absolute;
@@ -260,11 +266,7 @@ header .hamburger {
   flex-direction: column;
   row-gap: 5px;
 }
-.experience-box .list-box .skill {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #575757;
-}
+
 .profile-box.projects-box {
   display: grid;
   box-shadow: none;

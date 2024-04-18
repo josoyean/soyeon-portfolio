@@ -44,27 +44,31 @@ function ExperienceContent() {
           <div className="list-box">
             <div className="list">
               <span className="title">Tari Market </span>
+              <em> 메타버스 플랫폼 코인 거래소</em>
               <span className="date">2023.11 ~ 2023.12</span>
-              <ul>
-                <li>웹 퍼블리싱 - 90%</li>
-                <li>
-                  index페이지에서 1/3 제외한 나머지 부분, 다른 페이지 전부 제작
-                </li>
-              </ul>
-              <ul>
-                <li>웹 프론트엔드 - 60%</li>
-                <li> 마이 프로필 수정, 저장</li>
-                <li>제품 수정, 추가</li>
-                <li>관련 데이터 없을시 다른 페이지로 이동</li>
-                <li>자신 sns 주소 정보 연동, 삭제</li>
-                <li>wish 리스트 정보 데이터 추가, 삭제 요청</li>
-              </ul>
-              <span className="skill"> #html #css #js #jquery #thymeleaf</span>
+              <div className="">
+                <span>성과 - 크로스 브라우징 호환성 최적화</span>
+              </div>
+              <div className="">
+                <span>
+                  역할
+                  <ul>
+                    <li>
+                      기존 구성 되었던 구형의 코드를 웹 표준에 적합한 코드를
+                      개선 및 유지보수
+                    </li>
+                    <li>
+                      모든 브라우저에서 원활하게 동작하도록 JavaScript, Jquery의
+                      최신 표준을 준수
+                    </li>
+                  </ul>
+                </span>
+              </div>
             </div>
 
             <div className="list">
               <span className="title">
-                K-POP SEOUL{" "}
+                K-POP SEOUL
                 <button
                   onClick={(e) => {
                     DemoLink(
@@ -76,25 +80,35 @@ function ExperienceContent() {
                   Page Open
                 </button>
               </span>
-              <span className="date">2023.10 ~ 2023.12</span>
-              <ul>
-                <li>웹 퍼블리싱 - 95%</li>
-                <li>페이지 제작</li>
-              </ul>
-              <ul>
-                <li>웹 프론트엔드 - 70%</li>
-                <li> 실시간 투표 누적 순위, 오늘의 투표 순위 작업</li>
-                <li>스타 팔로우, 언팔 작업</li>
-                <li>설정한 시간과 현재 시간 비교 후 공지 팝업 오픈</li>
-                <li>설정 페이지 언어 변경 </li>
-                <li>무료 충전 광고 페이지 연동</li>
-                <li>로딩 페이지 추가 해서 사용자 혼란 최소화</li>
-              </ul>
-              <span className="skill"> #html #css #js #jquery #thymeleaf</span>
+              <em>서울가요대상 투표앱</em>
+              <span className="date">2023.09 ~ 2023.12</span>
+              <div className="">
+                <span>
+                  성과 - 웹사이트 성능 최적화로 페이지 로딩 시간 이전보다 5초
+                  이상 단축
+                </span>
+              </div>
+              <div className="">
+                <span>
+                  역할
+                  <ul>
+                    <li>
+                      일정 시간마다 투표수 데이터를 캐싱하여 데이터 처리 시 서버
+                      지연현상 해소
+                    </li>
+                    <li>받은 데이터를 그룹화하여 불필요한 요청 최소화</li>
+                    <li>
+                      자주 사용되는 기능들을 모듈화하여 관리, 필요 시 관련
+                      모듈을 불러오도록 적용하여 코드의 중복을 줄여 유지보수성
+                      향상
+                    </li>
+                  </ul>
+                </span>
+              </div>
             </div>
             <div className="list">
               <span className="title">
-                SeoulMusicaWards{" "}
+                SeoulMusicaWards
                 <button
                   onClick={(e) => {
                     DemoLink("https://seoulmusicawards.com/page/index", e);
@@ -103,22 +117,54 @@ function ExperienceContent() {
                   Page Open
                 </button>
               </span>
-              <span className="date">2023.10 ~ 2023.11</span>
-              <ul>
-                <li>웹 퍼블리싱 - 95%</li>
-                <li>페이지 제작</li>
-                <li>사용자 기기 확인 후 pc버전 모바일 버전 제작 - 반응형 X</li>
-              </ul>
-
-              <ul>
-                <li>웹 프론트엔드 - 90%</li>
-                <li>실시간 투표 누적 순위</li>
-                <li>언어 변경</li>
-                <li>역대 수상자 데이터 JSON 데이터 제작 후 실행</li>
-                <li>투표 어플 순위 토대로 웹 페이지 제작</li>
-                <li>투표 결과 상 종류에 따라 데이터 분류 후 제작</li>
-              </ul>
-              <span className="skill"> #html #css #js #jquery #thymeleaf</span>
+              <em>하이원 서울가요대상 - 제 33회 서울가요대상 홈페이지</em>
+              <span className="date">2023.09 ~ 2023.12</span>
+              <div className="">
+                <span>성과 - 크로스 브라우저 호환성 및 반응형 웹 개발</span>
+              </div>
+              <div className="">
+                <span>
+                  역할
+                  <ul>
+                    <li>
+                      브라우저별 테스트를 진행하여 모든 브라우저에서 작동하도록
+                      크로스 브라우저 호환성 최적화
+                    </li>
+                    <li>
+                      CSS 레이아웃이 다양한 디바이스에 적합한 스타일로
+                      보여지도록 Flex box 와 Grid 를 사용하여 유연한 레이아웃을
+                      적용
+                    </li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+            <div className="list">
+              <span className="title">BigFootCamping</span>
+              <em>자회사 캠핑 예약 사이트(회사 사정상 제작 중단)</em>
+              <span className="date">2023.01 ~ 2023.08</span>
+              <div className="">
+                <span>
+                  성과 - 로컬 환경에서의 웹 페이지 성능 최적화 및 입력 유효성
+                  검사
+                </span>
+              </div>
+              <div className="">
+                <span>
+                  역할
+                  <ul>
+                    <li>로컬 환경에서의 웹 페이지 로딩 속도 3초 이상 단축</li>
+                    <li>
+                      사용자가 데이터를 입력시 적합한 형식의 데이터를 입력하도록
+                      구현
+                    </li>
+                    <li>
+                      데이터의 형식을 검증하여, 잘못된 데이터 인한 무결성 손상
+                      방지
+                    </li>
+                  </ul>
+                </span>
+              </div>
             </div>
             <div className="list">
               <span className="title">
@@ -131,15 +177,22 @@ function ExperienceContent() {
                   Page Open
                 </button>
               </span>
-              <span className="date">2022.08 ~ 2023.08</span>
-              <ul>
-                <li>웹 퍼블리싱 - 45%</li>
-                <li>
-                  메인 페이지 로드맵, Our Team, Our Partners 부분 제작 and
-                  페이지 유지보수
-                </li>
-              </ul>
-              <span className="skill"> #html #css #js #jquery #thymeleaf</span>
+              <em>코인원 메타버스 플랫폼</em>
+              <span className="date">2022.10 ~ 2023.01</span>
+              <div className="">
+                <span>성과 - 사용자 인터페이스 개선</span>
+              </div>
+              <div className="">
+                <span>
+                  역할
+                  <ul>
+                    <li>웹사이트를 쉽게 이용할 수 있도록 접근성 고려</li>
+                    <li>
+                      명료한 폰트와 컬러를 사용하여 직관적인 페이지를 구현
+                    </li>
+                  </ul>
+                </span>
+              </div>
             </div>
           </div>
         </div>
