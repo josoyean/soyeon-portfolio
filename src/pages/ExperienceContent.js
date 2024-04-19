@@ -41,6 +41,9 @@ function ExperienceContent() {
           </span>
           <span className="name">너울 소프트</span>
           <span className="position">웹 퍼블리셔 & 프론트엔드</span>
+          <span className="skill">
+            사용 스킬 : React, Javascript, Jquery, Css, Styled-Components, Redux
+          </span>
           <div className="list-box">
             <div className="list">
               <span className="title">Tari Market </span>
@@ -65,7 +68,6 @@ function ExperienceContent() {
                 </span>
               </div>
             </div>
-
             <div className="list">
               <span className="title">
                 K-POP SEOUL

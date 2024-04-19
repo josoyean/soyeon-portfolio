@@ -12,7 +12,7 @@ function ProjectContent() {
         "Css",
         "Javascript",
         "Tailwindcss",
-        "Node",
+
         "React-Query",
         "Redux",
         "Npm",
@@ -22,6 +22,7 @@ function ProjectContent() {
       Title: "catchtable",
       ItemDate: "2024.01 ~ 작업중",
       MyWork: ["로그인", "예약", "채팅", "답글", "사장(식당관리)"],
+      blogLink: "https://saltsoyeon.tistory.com/54",
       // pageLink: "https://josoyean.github.io/soyeon-portfolio",
       CodeBtn: true,
       pageBtn: false,
@@ -41,7 +42,7 @@ function ProjectContent() {
         "Html",
         "Css",
         "Javascript",
-        "Node",
+
         "Redux",
         "Npm",
         "Styled-Components",
@@ -50,6 +51,7 @@ function ProjectContent() {
       Title: "soyeon-portfolio",
       ItemDate: "2023.12 ~ 2023.12",
       MyWork: ["페이지 전체 작업"],
+      blogLink: "https://saltsoyeon.tistory.com/52",
       pageLink: "https://josoyean.github.io/soyeon-portfolio",
       CodeBtn: true,
       pageBtn: true,
@@ -71,7 +73,7 @@ function ProjectContent() {
         "Html",
         "Css",
         "Javascript",
-        "Node",
+
         "Redux",
         "Npm",
         "Styled-Components",
@@ -80,6 +82,7 @@ function ProjectContent() {
       Title: "TVING",
       ItemDate: "2023.08 ~ 2023.11",
       MyWork: ["페이지 전체 작업"],
+      blogLink: "https://saltsoyeon.tistory.com/58",
       pageLink: "https://josoyean.github.io/tving",
       CodeBtn: true,
       pageBtn: true,
@@ -101,7 +104,7 @@ function ProjectContent() {
         "Html",
         "Css",
         "Javascript",
-        "Node",
+
         "Redux",
         "Npm",
         "Styled-Components",
@@ -113,6 +116,7 @@ function ProjectContent() {
       pageLink: "https://josoyean.github.io/weather-alert",
       CodeBtn: true,
       pageBtn: true,
+      blogLink: "https://saltsoyeon.tistory.com/53",
       codeLink: "https://github.com/josoyean/weather-alert",
       part: [
         "기상청 API 2개 이상 데이터 axios 이용하여 제작",

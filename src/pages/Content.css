@@ -1,6 +1,9 @@
 html {
   font-size: 16px;
 }
+body {
+  overflow-x: hidden;
+}
 .text-box {
   text-align: center;
   position: absolute;
@@ -48,7 +51,7 @@ header .hamburger {
 }
 .profile-box {
   width: calc(100% - 400px);
-  padding: 8px 20px;
+  padding: 20px 20px;
   margin: 50px auto 70px;
   box-sizing: border-box;
   border-radius: 5px;
@@ -203,11 +206,13 @@ header .hamburger {
   color: #101010;
   margin: 5px 0;
 }
+.experience-box .item-box span.skill,
 .experience-box .item-box span.position {
   font-size: 0.8rem;
   font-weight: 400;
   color: #575757;
 }
+
 .experience-box .list-box {
   margin-top: 10px;
   display: grid;
@@ -738,7 +743,7 @@ header .close {
     font-size: 1rem;
   }
   button {
-    padding: 2px 8px;
+    padding: 4px 8px;
     border-radius: 15px;
   }
 

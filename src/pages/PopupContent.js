@@ -30,6 +30,13 @@ function PopupContent({ item, closeClick, elementIndex, pageBtn, introduce }) {
             Git Open
           </button>
           <button
+            onClick={(e) => {
+              DemoLink(`${item.blogLink}`, e);
+            }}
+          >
+            Blog Open
+          </button>
+          <button
             className="close"
             onClick={(e) => closeClick(elementIndex, e)}
           >
@@ -67,7 +74,7 @@ function PopupContent({ item, closeClick, elementIndex, pageBtn, introduce }) {
           </div>
         </div>
         <div className="sub">
-          <span>구현 기능</span>
+          <span>상세 역할</span>
           <ul className="job-box">
             {item.part.map((items, index) => {
               return <li key={index}>{items} </li>;
