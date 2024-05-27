@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import "./Content.css";
+
 function AboutContent() {
   useEffect(() => {
     const content =

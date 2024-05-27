@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import "./Header.css";
+
 function Header() {
   const [lineWidth, setLineWidth] = useState(0);
   const [isMenu, setIsMenu] = useState(false);
