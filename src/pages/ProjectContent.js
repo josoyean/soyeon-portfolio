@@ -12,7 +12,6 @@ function ProjectContent() {
         "Css",
         "Javascript",
         "Tailwindcss",
-
         "React-Query",
         "Redux",
         "Npm",
@@ -37,15 +36,7 @@ function ProjectContent() {
     {
       id: "03",
       LinkName: "project13",
-      SkillText: [
-        "React",
-        "Html",
-        "Css",
-        "Javascript",
-        "Redux",
-        "Npm",
-        "Styled-Components",
-      ],
+      SkillText: ["React", "Html", "Css", "Javascript", "Styled-Components"],
       Position: "FrontEnd & Web Publisher",
       Title: "soyeon-portfolio",
       ItemDate: "2023.12 ~ 2023.12",
@@ -72,8 +63,8 @@ function ProjectContent() {
         "Html",
         "Css",
         "Javascript",
-
-        "Redux",
+        "Recoil",
+        "React-Router",
         "Npm",
         "Styled-Components",
       ],
@@ -87,11 +78,9 @@ function ProjectContent() {
       pageBtn: true,
       codeLink: "https://github.com/josoyean/tving",
       part: [
-        "티빙 프로그램 JSON 데이터 제작 후 분류해서 제작",
-        "로그인 요청으로 받은 인가 코드로 토큰 받기 성공",
-        "발급된 토큰으로 사용자 로그인 성공 ",
-        "react-router를 이용해서 여러 페이지 연결, Link로 페이지 이동 적용",
-        "누적 시청수 기준으로 정렬하는 기능 구현, 인기 프로그램을 직관적으로 파악할 수 있도록 제작",
+        "react-router를 이용해서 페이지 연결, Link로 페이지 이동",
+        "JSON 데이터 제작 후 server 이용해서 배포",
+        "카카오톡 로그인 연동",
       ],
       introduce: "OTT <TVING>를 클론",
     },
@@ -103,7 +92,6 @@ function ProjectContent() {
         "Html",
         "Css",
         "Javascript",
-
         "Redux",
         "Npm",
         "Styled-Components",
